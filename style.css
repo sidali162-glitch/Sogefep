@@ -1,0 +1,187 @@
+body{
+  margin:0;
+  font-family: Arial, Tahoma;
+  background:#f5f5f7;
+  color:#222;
+}
+
+.header{
+  background: linear-gradient(90deg, #6a00ff, #9b5cff);
+  color:white;
+  padding:22px 10px;
+  text-align:center;
+}
+
+.header-inner{
+  max-width: 900px;
+  margin:auto;
+}
+
+.nav{
+  margin-top: 12px;
+  display:flex;
+  gap:14px;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  padding:8px 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.15);
+}
+
+.nav a:hover{
+  background: rgba(255,255,255,.25);
+}
+
+.container{
+  max-width: 900px;
+  margin:auto;
+  padding: 20px;
+}
+
+.slider{
+  position: relative;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.slider img{
+  width:100%;
+  height: 420px;
+  object-fit: cover;
+  display:block;
+}
+
+.caption{
+  padding:18px 20px;
+}
+
+.caption h2{
+  margin:0 0 8px 0;
+  font-size: 22px;
+  color:#4a00c9;
+}
+
+.caption p{
+  margin:0;
+  line-height: 1.8;
+  font-size: 16px;
+  color:#333;
+}
+
+.controls{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  margin-top:15px;
+}
+
+button{
+  padding:10px 18px;
+  border:none;
+  border-radius: 12px;
+  cursor:pointer;
+  font-size: 15px;
+  background:#6a00ff;
+  color:white;
+  transition:.2s;
+}
+
+button:hover{opacity:.85}
+button:active{transform: scale(.98);}
+
+.card{
+  margin-top: 22px;
+  background: white;
+  border-radius: 18px;
+  padding: 18px 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+.card h2{
+  margin: 0 0 10px 0;
+  color:#4a00c9;
+}
+
+.contact-form{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:12px 12px;
+  border-radius: 12px;
+  border:1px solid #ddd;
+  outline:none;
+  font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-color:#6a00ff;
+}
+
+.send-btn{
+  margin-top: 5px;
+}
+
+.note{
+  margin: 6px 0 0 0;
+  font-size: 13px;
+  color:#666;
+}
+
+/* زر واتساب عائم */
+.whatsapp-float{
+  position: fixed;
+  bottom: 18px;
+  left: 18px;
+  z-index: 999;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+.whatsapp-float:hover{
+  opacity: .9;
+}
+
+.footer{
+  margin-top:30px;
+  background:#111;
+  color:#eee;
+  padding: 25px 15px;
+  text-align:center;
+}
+
+.footer-box{
+  max-width: 900px;
+  margin:auto;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.footer a{
+  color:#9b5cff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+@media (max-width: 600px){
+  .slider img{height: 260px;}
+  .caption h2{font-size: 18px;}
+  .caption p{font-size: 14px;}
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>موقع عرض الصور</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <h1>موقع عرض الصور</h1>
+      <p>صور متغيرة + شرح معنى كل صورة</p>
+      <nav class="nav">
+        <a href="#gallery">الصور</a>
+        <a href="#about">عن الموقع</a>
+        <a href="#contact">اتصل بنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="gallery" class="slider">
+      <img id="sliderImage" src="images/1.jpg" alt="صورة">
+      <div class="caption">
+        <h2 id="sliderTitle">عنوان الصورة</h2>
+        <p id="sliderText">هنا تكتب معنى الصورة ومعلومات عنها.</p>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button id="prevBtn">السابق</button>
+      <button id="nextBtn">التالي</button>
+    </div>
+
+    <section id="about" class="card">
+      <h2>عن الموقع</h2>
+      <p>
+        هذا موقع بسيط لعرض صور متغيرة مع شرح معنى كل صورة.
+        يمكنك تعديل الصور والعناوين والنصوص من ملف <b>script.js</b>.
+      </p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>اتصل بنا</h2>
+
+      <form class="contact-form" action="#" onsubmit="return false;">
+        <label>الاسم</label>
+        <input type="text" placeholder="اكتب اسمك" required>
+
+        <label>البريد الإلكتروني</label>
+        <input type="email" placeholder="example@gmail.com" required>
+
+        <label>الرسالة</label>
+        <textarea rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+
+        <button type="submit" class="send-btn">إرسال</button>
+        <p class="note">ملاحظة: هذا النموذج تجريبي. إذا أردت إرسال الرسائل فعلياً إلى بريدك أخبرني.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- زر واتساب -->
+  <a class="whatsapp-float" href="https://wa.me/213000000000" target="_blank" title="تواصل عبر واتساب">
+    واتساب
+  </a>
+
+  <footer class="footer">
+    <div class="footer-box">
+      <p>📌 معلومات: هذا الموقع يعرض صور مع شرح معناها.</p>
+      <p>📧 البريد الإلكتروني: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+      <p>📞 الهاتف: <a href="tel:+213000000000">+213 00 00 00 00</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
